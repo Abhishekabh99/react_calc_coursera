@@ -1,38 +1,68 @@
+/* Center the calculator */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 300px; /* Increased the width for more space */
+  height: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+/* Style for all buttons */
+button {
+  width: 150px; /* Made buttons wider */
+  height: 50px; /* Made buttons taller */
+  margin: 10px; /* Increased margin for spacing */
+  border: none;
+  font-size: 1.2rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the action buttons */
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
+
+/* Style for reset buttons */
+button[style] {
+  background-color: #ff5733;
   color: white;
+  font-weight: bold; /* Added bold text to make reset buttons stand out */
 }
 
-.App-link {
-  color: #61dafb;
+button[style]:hover {
+  background-color: #ff4521;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[style]:active {
+  background-color: #ff3411;
 }
